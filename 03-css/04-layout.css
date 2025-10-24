@@ -12,29 +12,22 @@ body {
   box-sizing: border-box;
   padding: 10px;
   border: 4px solid var(--black);
-  display: flex;
 }
 
 .header {
-  justify-items: start;
-  display: inline-block;
-  width: 100%;
   background-color: var(--blue);
-}
-
-.row-wrapper {
   display: flex;
-  width: 100%;
 }
 
 .section {
+  display: inline-block;
   width: 75%;
   height: 300px;
   background-color: var(--orange);
 }
 
 .aside {
-  display: inline-block;
+  float: right;
   width: 25%;
   height: 300px;
   background-color: var(--gold);
