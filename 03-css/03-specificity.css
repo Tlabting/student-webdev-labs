@@ -3,23 +3,59 @@
 nav .list-item > a {
   color: var(--purple);
 }
+/* 
+0-1-2 
+id:  NONE
+class/att/psuedo-class: list-item
+element/psuedo-element: nav, a
+*/
 
 #main::first-letter {
   color: var(--purple);
 }
+/* 
+1-0-1
+id:  main
+class/att/psuedo-class: NONE
+element/psuedo-element: first-letter 
+*/
 
 input[type] {
   color: var(--purple);
 }
+/*
+0-1-1
+id: NONE 
+class/att/psuedo-class: type
+element/psuedo-element: input
+*/
 
 section .main::first-line {
   color: var(--purple);
 }
+/*
+0-1-2 
+id: NONE
+class/att/psuedo-class: main
+element/psuedo-element: section, first-line
+*/
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
+/*
+1-2-4
+id: first
+class/att/psuedo-class: menu, class="visited"
+element/psuedo-element: nav, ul, li, a
+*/
 
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
+/*
+0-0-8
+id: NONE
+class/att/psuedo-class: NONE
+element/psuedo-element: div, ol, li, ul, li, ol, li, ul, li, a
+*/
