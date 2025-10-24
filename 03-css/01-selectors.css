@@ -25,19 +25,15 @@ li[class$="g"] {
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-div.list-food li:nth-child(1) {
+section li {
   color: var(--green);
-}
-div.list-food li:nth-child(2) {
-  color: var(--darkmagenta);
-}
-div.list-food li:nth-child(3) {
-  color: var(--royalblue);
-}
-div.list-food li:nth-child(4) {
-  color: var(--darkmagenta);
 }
 
-div.list-cleaning li {
-  color: var(--green);
+/* everything on the same level as "first" */
+
+.first ~ li {
+  color: var(--violet);
+}
+.second + li {
+  color: var(--royalblue);
 }
